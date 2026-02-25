@@ -15,10 +15,16 @@ export default function Header({ className }: HeaderProps) {
             Услуги
           </a>
           <a
-            href="#contact"
+            href="/services#contact"
             className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
           >
             Контакты
+          </a>
+          <a
+            href="/services#ukk"
+            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
+          >
+            Обучение
           </a>
           <a
             href="/vport"
