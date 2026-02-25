@@ -2,6 +2,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Icon from "@/components/ui/icon";
 
+const professions = [
+  "Водитель погрузчика", "Докер-механизатор", "Машинист крана (авто-, козлового, портального, плавучего)",
+  "Матрос", "Маляр", "Кладовщик", "Стропальщик", "Тальман",
+  "Слесарь (ремонтник, сантехник, по перегрузочным машинам и такелажу)",
+  "Токарь", "Фрезеровщик", "Электромонтер", "Электрогазосварщик", "Вулканизаторщик",
+];
+
 const services = [
   {
     icon: "Route",
@@ -79,6 +86,116 @@ export default function Services() {
                 <span className="text-sm text-neutral-700">{c}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Контакты */}
+      <div id="contact" className="bg-neutral-950 text-white py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 mb-12">
+            <Icon name="MapPin" size={24} className="text-neutral-400" />
+            <h2 className="text-2xl font-bold uppercase tracking-wide">Контакты</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-neutral-500 mb-1">Организация</p>
+                <p className="text-white text-lg font-semibold leading-snug">АО «Осетровский речной порт»</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-neutral-500 mb-1">Генеральный директор</p>
+                <p className="text-white">Алимов Владимир Юрьевич</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-neutral-500 mb-1">Адрес</p>
+                <p className="text-white leading-relaxed">Россия, 666781, Иркутская обл.,<br />г. Усть-Кут, ул. Луговая стр. 21</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div>
+                <p className="text-xs uppercase tracking-widest text-neutral-500 mb-1">Приёмная</p>
+                <a href="tel:+73956540140" className="text-white text-lg hover:text-neutral-400 transition-colors">
+                  8 (39565) 4-01-40
+                </a>
+                <span className="text-neutral-500 ml-2 text-sm">доб. 3000</span>
+              </div>
+              <div className="pt-6 border-t border-neutral-800">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Globe" size={16} className="text-neutral-500" />
+                  <a href="https://port-osetrovo.ru" target="_blank" rel="noreferrer" className="text-neutral-400 hover:text-white transition-colors text-sm">
+                    port-osetrovo.ru
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* УКК — Обучение */}
+      <div className="bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <p className="text-xs uppercase tracking-widest text-neutral-400 mb-3">Учебно-курсовой комбинат</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6 leading-tight">Обучение и повышение квалификации</h2>
+              <div className="space-y-3 mb-8">
+                {[
+                  "Профессиональная подготовка и переподготовка",
+                  "Повышение квалификации",
+                  "Обучение работников опасных производственных объектов",
+                  "Проверка знаний по рабочим профессиям",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <Icon name="CheckCircle" size={18} className="text-neutral-800 shrink-0 mt-0.5" />
+                    <span className="text-neutral-700 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="bg-neutral-50 border border-neutral-200 p-6 space-y-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <Icon name="User" size={16} className="text-neutral-500" />
+                  <span className="text-xs uppercase tracking-widest text-neutral-500">Начальник УКК</span>
+                </div>
+                <p className="font-semibold text-neutral-900">Николаева Яна Васильевна</p>
+                <div className="flex flex-col gap-1 pt-1">
+                  <a href="tel:+79149505447" className="flex items-center gap-2 text-sm text-neutral-700 hover:text-black transition-colors">
+                    <Icon name="Smartphone" size={14} className="text-neutral-400" />
+                    8 914 950 54 47
+                  </a>
+                  <a href="tel:+73956540140" className="flex items-center gap-2 text-sm text-neutral-700 hover:text-black transition-colors">
+                    <Icon name="Phone" size={14} className="text-neutral-400" />
+                    8 (39565) 4-01-40 <span className="text-neutral-400">(вн. 3083)</span>
+                  </a>
+                  <a href="mailto:YNikolaeva@sibfinance.com" className="flex items-center gap-2 text-sm text-neutral-700 hover:text-black transition-colors">
+                    <Icon name="Mail" size={14} className="text-neutral-400" />
+                    YNikolaeva@sibfinance.com
+                  </a>
+                </div>
+                <p className="text-xs text-neutral-500 pt-2 border-t border-neutral-200">Приём ведётся по заявкам организаций и по заявлениям граждан</p>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <div className="overflow-hidden">
+                <img
+                  src="https://cdn.poehali.dev/projects/66345227-9556-4954-841e-ad433f581b7b/files/93d80a73-e338-4d89-b859-29da593f307e.jpg"
+                  alt="Учебно-курсовой комбинат"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-widest text-neutral-400 mb-4">Обучение по профессиям</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {professions.map((p) => (
+                    <div key={p} className="flex items-center gap-2 py-1.5 border-b border-neutral-100">
+                      <Icon name="ChevronRight" size={14} className="text-neutral-400 shrink-0" />
+                      <span className="text-sm text-neutral-700">{p}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
