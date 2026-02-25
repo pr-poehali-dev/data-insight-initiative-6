@@ -19,7 +19,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="https://cdn.poehali.dev/projects/66345227-9556-4954-841e-ad433f581b7b/files/bc183e27-765a-47d5-86b9-3915c9a3edd8.jpg"
+          src="https://cdn.poehali.dev/projects/66345227-9556-4954-841e-ad433f581b7b/bucket/61f4417a-d908-4031-a04c-ab553593ed38.jpg"
           alt="Осетровский речной порт на реке Лена"
           className="w-full h-full object-cover"
         />
