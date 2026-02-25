@@ -9,8 +9,8 @@ export default function Featured() {
     <div id="services" className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
       <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Речной порт"
+          src="https://cdn.poehali.dev/projects/66345227-9556-4954-841e-ad433f581b7b/bucket/1b2b1aa6-b957-48b4-b4a6-3aa370548e3f.jpg"
+          alt="Перевалка грузов в Осетровском порту"
           className="w-full h-full object-cover"
         />
       </div>
