@@ -20,6 +20,12 @@ export default function Header({ className }: HeaderProps) {
           >
             Контакты
           </a>
+          <a
+            href="/vport"
+            className="bg-white text-black px-4 py-1.5 uppercase text-sm font-bold hover:bg-neutral-200 transition-colors duration-300"
+          >
+            VPORT
+          </a>
         </nav>
       </div>
     </header>
