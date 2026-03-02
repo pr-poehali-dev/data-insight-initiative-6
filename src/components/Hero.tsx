@@ -27,12 +27,12 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/40 z-[1]" />
       <div className="relative z-10 text-center text-white px-6">
-        <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-4 opacity-80">Усть-Кут · Река Лена · С 1951 года</p>
+        <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-4 opacity-80">Усть-Кут · Река Лена · В составе ГК «Старвей» с 2011 года</p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-none">
           ОСЕТРОВСКИЙ<br/>РЕЧНОЙ ПОРТ
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 leading-relaxed">
-          Ворота в северные регионы России — перевалка грузов из железной дороги на водный транспорт и доставка в Якутию
+          Один из крупнейших речных портов России — на пересечении БАМа и реки Лены. Перевалка навалочных, тарно-штучных грузов и контейнеров в Якутию и районы Крайнего Севера.
         </p>
         <a href="#services" className="inline-block mt-10 border border-white text-white uppercase text-sm tracking-widest px-8 py-3 hover:bg-white hover:text-black transition-all duration-300">
           Наши услуги

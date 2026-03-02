@@ -1,7 +1,7 @@
 const services = [
-  { title: "Перевалка грузов", desc: "Перегрузка всех видов товаров с железной дороги на водный транспорт и обратно" },
-  { title: "Северный завоз", desc: "Доставка грузов в Якутию, Витим, Ленск, Олёкминск, Якутск и другие северные районы" },
-  { title: "Контейнерные перевозки", desc: "Обработка крупнотоннажных контейнеров весом до 40 тонн" },
+  { title: "Два грузовых района", desc: "Северный грузовой район (СГР) и Западный перегрузочный комплекс (ЗПК) — 19 причалов, 1 855 м причальной стенки" },
+  { title: "Тяжеловесные грузы", desc: "Крупногабаритные грузы до 160 тонн, кран-деррик, 4 ричстакера, 33 портальных и козловых крана" },
+  { title: "Контейнерные поезда", desc: "Приём и отправка контейнерных поездов — до 10 составов в месяц, прямое ж/д-водное сообщение" },
 ];
 
 export default function Featured() {
@@ -15,9 +15,9 @@ export default function Featured() {
         />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Наши услуги</h3>
+        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Инфраструктура</h3>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Стратегический узел грузовой логистики на реке Лена — связующее звено между Транссибом и арктическими территориями.
+          На пересечении БАМа и реки Лены — ключевой перевалочный узел для грузов в Якутию и Арктику.
         </p>
         <div className="flex flex-col gap-6 mb-8">
           {services.map((s) => (
@@ -27,8 +27,8 @@ export default function Featured() {
             </div>
           ))}
         </div>
-        <a href="tel:+73952000000" className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Связаться с нами
+        <a href="/services" className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
+          Все услуги
         </a>
       </div>
     </div>

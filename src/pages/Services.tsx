@@ -42,6 +42,45 @@ const services = [
   },
 ];
 
+const infrastructure = [
+  "13 причалов СГР + 6 причалов ЗПК, 1 855 м причальной стенки",
+  "Причал РО-РО для заезда/съезда техники",
+  "438 вагонов одновременной подачи, 13,3 км ж/д путей",
+  "33 портальных и козловых крана",
+  "4 ричстакера",
+  "Кран-деррик «Деррик» грузоподъёмностью 160 тонн",
+  "49,2 га площадок открытого хранения",
+  "69 000 м² крытых складов",
+  "7 700 м² тёплых складов",
+];
+
+const cargoTypes = [
+  "Грузы классов опасности 2, 3, 4, 5, 6, 8",
+  "Контейнеры, приём и отправка контейнерных поездов",
+  "Металлопродукция: прокат, трубы, ТБД, лом чёрных металлов",
+  "Авто и спецтехника",
+  "Крупногабаритные и тяжеловесные грузы до 160 тонн",
+  "Железобетонные изделия и конструкции",
+  "Грузы в транспортных пакетах",
+  "Сыпучие грузы: ПГС, уголь, щебень и другое",
+];
+
+const additionalServices = [
+  "Разработка и согласование схем крепления грузов на ж/д транспорте",
+  "Ремонт контейнеров",
+  "Токарные и фрезерные работы по чертежам заказчика",
+  "Ремонт и изготовление гребных валов, балеров для теплоходов",
+  "Наплавка валов, шкивов, катков и других изношенных узлов",
+  "Изготовление шестерён",
+  "Рубка и раскрой металла, гибка на вальцах по чертежам",
+  "Ремонт ГЗУ (балок, траверс, рам)",
+  "Заплетка стальных канатов (коуш, петля)",
+  "Сварочные работы любой сложности, изготовление узлов и деталей",
+  "Ремонт и перемотка электродвигателей, трансформаторов",
+  "Ремонт электрооборудования судов и кранов",
+  "Тестирование и ремонт судовых электростанций",
+];
+
 const clients = [
   "ПАО «Сургутнефтегаз»",
   "ПАО «Роснефть»",
@@ -86,6 +125,60 @@ export default function Services() {
                 <span className="text-sm text-neutral-700">{c}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Инфраструктура */}
+      <div className="bg-neutral-950 text-white py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 mb-10">
+            <Icon name="Building" size={24} className="text-neutral-400" />
+            <h2 className="text-2xl font-bold uppercase tracking-wide">Инфраструктура и механизация</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {infrastructure.map((item) => (
+              <div key={item} className="flex items-start gap-3 py-3 border-b border-neutral-800">
+                <Icon name="ChevronRight" size={16} className="text-neutral-500 shrink-0 mt-0.5" />
+                <span className="text-sm text-neutral-300 leading-snug">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Виды грузов */}
+      <div className="bg-white py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+              <div className="flex items-center gap-3 mb-8">
+                <Icon name="Package" size={24} className="text-black" />
+                <h2 className="text-2xl font-bold uppercase tracking-wide">Виды грузов</h2>
+              </div>
+              <div className="space-y-3">
+                {cargoTypes.map((item) => (
+                  <div key={item} className="flex items-start gap-3 py-2 border-b border-neutral-100">
+                    <Icon name="CheckCircle" size={16} className="text-neutral-400 shrink-0 mt-0.5" />
+                    <span className="text-sm text-neutral-700 leading-snug">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center gap-3 mb-8">
+                <Icon name="Wrench" size={24} className="text-black" />
+                <h2 className="text-2xl font-bold uppercase tracking-wide">Дополнительные услуги</h2>
+              </div>
+              <div className="space-y-3">
+                {additionalServices.map((item) => (
+                  <div key={item} className="flex items-start gap-3 py-2 border-b border-neutral-100">
+                    <Icon name="ChevronRight" size={16} className="text-neutral-400 shrink-0 mt-0.5" />
+                    <span className="text-sm text-neutral-700 leading-snug">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
